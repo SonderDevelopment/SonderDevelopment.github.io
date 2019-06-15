@@ -1,0 +1,35 @@
+html, body {
+     margin: 0;
+     width: 100%;
+     height: 100%;
+}
+
+h1 {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: Bison;
+     text-transform: uppercase;
+     color: #fff;
+     text-align: center;
+     font-weight: 600;
+     font-size: 24px;
+     letter-spacing: 15px;
+}
+
+h2{
+     position: absolute;
+     bottom: 1%;
+     left: 2%;
+     font-family: Bison;
+     font-size: 20px;
+     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+     h1 {
+          font-size: 12px;
+          letter-spacing: 4px;
+     }
+}
