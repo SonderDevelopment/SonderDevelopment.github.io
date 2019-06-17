@@ -9,8 +9,116 @@
      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
      <script src="jquery.vide.js"></script>
 </head>
-<body data-vide-bg="trimmed13.mp4">
+<body data-vide-bg="motionplace">
      <h1>Sonder Development Studio</h1>
      <h2>@sonderdevelopment</h2>
+     <button class = "contactbtn" id = "contact">CONTACT US</button>
+
+     <div class = "modal" id = "myModal">
+
+	     <div class = "modalContent">
+			<span class="close">&times;</span>     	
+			
+			<div class = "form">
+				
+				<div class="container">
+					<h3>GET IN TOUCH</h1>
+     				<h4>We'll get back to you as soon as possible.</h2>
+				  <form action="http://formspree.io/contact@sonderdevelopment.studio" method = "POST">
+
+				    <div class="row">
+				    	
+				      <div class="col-25">
+				        <label for="fname">Name</label>
+				      </div>
+				      <div class="col-75">
+				        <input type="text" id="fname" name="name" placeholder="Name">
+				      </div>
+				    </div>
+
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="lname">Email</label>
+				      </div>
+				      <div class="col-75">
+				        <input type="text" id="lname" name="_replyto" placeholder="Email">
+				      </div>
+				    </div>
+
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="country">Choose a Subject</label>
+				      </div>
+				      <div class="col-75">
+				        <select id="country" name="_subject">
+				          <option value="web">Marketing Website</option>
+				          <option value="ECom">Shopify / E-Commerce</option>
+				          <option value="webapp">Custom Web Application</option>
+				          <option value="cusDev">Custom Development</option>
+				          <option value="gd">Graphic Design / Logo Creation</option>
+				          <option value="vid">Video Production / Editing</option>
+				          <option value="photo">Photography / Photo Editing</option>
+				          <option value="other">Other</option>
+				        </select>
+				      </div>
+				    </div>
+
+				    <div class="row">
+				      <div class="col-25">
+				        <label for="subject">Subject</label>
+				      </div>
+				      <div class="col-75">
+				        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+				      </div>
+				    </div>
+
+				    <div class="row">
+				      <input type="submit" value="Send">
+				    </div>
+
+				  </form>
+				</div>
+
+				<!--form action="http://formspree.io/you@email.com">
+
+
+				<input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form-->
+
+
+			</div>
+
+
+	     </div>
+
+	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("contact");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+	</script>
+
 </body>
 </html>
