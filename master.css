@@ -25,6 +25,33 @@ h2{
      font-family: Bison;
      font-size: 20px;
      color: white;
+     text-decoration: none;
+}
+
+h2:hover{
+
+     color: grey;
+     cursor: pointer;
+
+}
+
+a{
+
+     position: absolute;
+     bottom: 1%;
+     left: 2%;
+     font-family: Bison;
+     font-size: 20px;
+     color: white;
+     text-decoration: none;
+
+}
+
+a:hover{
+
+     color: grey;
+     cursor: pointer;
+
 }
 
 h3{
